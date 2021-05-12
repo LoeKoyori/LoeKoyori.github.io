@@ -62,7 +62,7 @@ function bot_ui_ini() {
                 content: "![...](https://cdn.jsdelivr.net/gh/LoeKoyori/cdn@2.1/img/about/end.gif)"
             }).then(function () {
                 botui.action.button({
-                    delay: 500,
+                    delay: 1200,
                     action: [{
                         text: "然后呢？ 😃",
                         value: "sure"
