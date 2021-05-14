@@ -5,7 +5,7 @@
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   <meta name="referrer" content="same-origin">
   
-  <title itemprop="name">archive_a: 2021/5 | Loe-Koyori还在施工的家</title>
+  <title itemprop="name">如何恰当地使用预加载 | Loe-Koyori还在施工的家</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -393,133 +393,165 @@
   </div>
 </header>
 
-      <div class="blank" style="padding-top: 75px;">
-</div>
-<div id="content" class="site-content">
-  <div id="main">
-    <header class="page-header">
-      <h1 class="cat-title">
-      归档</h1>
-      <span class="cat-des">
-        <p>
-        Archives</p>
-      </span>
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://ww1.sinaimg.cn/large/007gk3UJgy1gqi1hwgssqj31z4140111.jpg);" src="https://cdn.jsdelivr.net/gh/LoeKoyori/cdn@2.0/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://ww1.sinaimg.cn/large/007gk3UJgy1gqi1hwgssqj31z4140111.jpg">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      如何恰当地使用预加载</h1>
+      <p class="entry-census">
+        <span>
+          <a href="https://blogdemo.playmarxcards.online">
+            <img src="https://cdn.jsdelivr.net/gh/LoeKoyori/cdn@2.0/img/custom/avatar.png">
+          </a>
+        </span>
+        <span>
+          <a href="https://blogdemo.playmarxcards.online">Loe-Koyori</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2021-5-9<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
     </header>
-    <div id="main-part">
-      <article class="art">
-        <div class="art-main">
-          <div class="art-content">
-            <div id="archives">
-              <p style="text-align:right;">
-                [<span id="al_expand_collapse" style="cursor: s-resize;">
-                全部展开/收缩</span>
-              ]</p>
-              
-              
-              
-              
-              
-                
-                <h3 class="al_year">2021年</h3>
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      05月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2021/05/13/使用 Moyea SWF to Video Converter 实现 swf 文件转换 mp4 文件/">
-                          <span style="color:#0bf;">
-                          13日14:18:01</span>
-                          使用 Moyea SWF to Video Converter 实现 swf 文件转换 mp4 文件
-                        </a>
-                      </li>
-                      
-              
-              
-              
-              
-              
-                      <li>
-                        <a href="/2021/05/11/提问的智慧/">
-                          <span style="color:#0bf;">
-                          11日12:18:01</span>
-                          提问的智慧
-                        </a>
-                      </li>
-                      
-              
-              
-              
-              
-              
-                      <li>
-                        <a href="/2021/05/09/如何恰当地使用预加载/">
-                          <span style="color:#0bf;">
-                          09日16:48:55</span>
-                          如何恰当地使用预加载
-                        </a>
-                      </li>
-                      
-              
-              
-              
-              
-              
-                      <li>
-                        <a href="/2021/05/08/hello-world/">
-                          <span style="color:#0bf;">
-                          08日22:16:05</span>
-                          Hello World
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
-              
-              
-              
-                
-                <h3 class="al_year">2018年</h3>
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      12月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2018/12/12/Hexo-Theme-Sakura/">
-                          <span style="color:#0bf;">
-                          12日22:16:01</span>
-                          Hexo-Theme-Sakura
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
+  </div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在搭建这个网站时，正好用到了 web 预加载的相关技术，故写一篇文章说明一下。</p>
+<p><strong>预加载</strong>是web前端中一个常见的性能优化技术，可以将所需的资源提前加载到本地，这样在后面需要用到这个资源时就可以直接从本地缓存读取资源，可大幅提升加载速度。</p>
+<p>本站封面背景图有八张，点击箭头按钮就可以更换壁纸。由于壁纸文件的体积较大，在优化前，壁纸的加载大概需要一秒钟，这期间主页背景将从白屏从上到下逐步加载完毕，极度影响浏览体验与沉浸感，让浏览者失去更换壁纸的畅快感。同时从上到下的加载也不符合水平箭头的UI交互逻辑，带来不协调。</p>
+<p><img src="http://ww1.sinaimg.cn/large/007gk3UJgy1gqi01lhf4tj31z4101qi3.jpg" alt="本站主页"></p>
+<p>按照以前的经验，我使用 <strong>Prefetch</strong> 指令加载背景图片，但很遗憾，浏览器拒绝了我的请求。在 Chrome 的浏览器控制台中，尽管浏览器知晓了我的预加载请求，但是它拒绝执行它，背景图片的下载仍然只在点击后开始。</p>
+<pre><code class="html">&lt;link rel=&quot;prefetch&quot; href=&quot;https://tva2.sinaimg.cn/large/0072Vf1pgy1foxkf8h7q7j31hc0u0k55.jpg&quot;&gt;
+</code></pre>
+<p>为什么会这样？</p>
+<p>长期以来，<strong>Prefetch</strong> 一直是预加载（至少在教学上）的主流，也具有非常不错的浏览器支持。它告诉浏览器下一次可能需要的资源，但浏览器并不一定会执行它。对于本站主页的这个需求，我们需要采用其他指令。</p>
+<h2 id="Prefetch"><a href="#Prefetch" class="headerlink" title="Prefetch"></a>Prefetch</h2><p><code>&lt;link rel=“prefetch”&gt;</code>指令告诉浏览器<strong>获取</strong>下一个页面<strong>可能需要的资源</strong>，并利用浏览器空闲时间来下载或预取用户在不久的将来可能访问的文档。大多数情况下，这意味着将以<strong>极低的优先级</strong>来获取资源（因为浏览器<em>知道</em>当前页面中需要的所有内容比我们<em>认为</em>下一个页面中需要的资源更重要）。在 Chrome 浏览器中，这个优先级是 “ <em>Lowest</em> ”。这意味着预取的主要用例是加快下一个页面的加载速度，而非当前页面。</p>
+<p>这个指令的浏览器支持程度较好，泛用度较高，但优先级较低，在预取如图片的大文件时很可能被浏览器拒绝。</p>
+<h2 id="Subresource"><a href="#Subresource" class="headerlink" title="Subresource"></a>Subresource</h2><p><code>&lt;link rel=“subresource”&gt;</code>指令致力于解决上一个指令优先级低的问题。<strong>Subresource</strong> 指令指定了页面资源的最高优先级，但由于我们无法在本指令中定义资源的优先级，因此其实浏览器（比如 Chrome 和基于 Chromium 的浏览器）以较低的优先级下载了该资源。这意味着在大多数情况下，本指令请求资源的时间和成功率与 <strong>Prefetch</strong> 差不了多少。</p>
+<h2 id="Preload"><a href="#Preload" class="headerlink" title="Preload"></a>Preload</h2><p><code>&lt;link rel=“preload”&gt;</code>指令是本篇的主角。与 <strong>Subresource</strong> 指令类似，<strong>Preload</strong> 用于获取当前页面的资源，但它拥有几个 <strong>Subresource</strong> 不具有的特性。</p>
+<h3 id="as-属性"><a href="#as-属性" class="headerlink" title="as 属性"></a>as 属性</h3><p> <strong>Subresource</strong> 具有一个<code>as</code>属性，该属性可以让浏览器做许多 <strong>Prefetch</strong> 和 <strong>Subresource</strong> 无法做到的事。<code>as</code>的可能值包括<code>&quot;script&quot;</code>，<code>&quot;style&quot;</code>，<code>&quot;image&quot;</code>，<code>&quot;media&quot;</code>，和<code>&quot;document&quot;</code>等。比如：</p>
+<pre><code class="html">&lt;link rel=&quot;preload&quot; href=&quot;example.js&quot; as=&quot;script&quot;&gt;
+</code></pre>
+<p>通过加入<code>as</code>属性，该指令能够指定预加载的资源类型，它能够显式声明一个高优先级资源，并强制浏览器请求它。</p>
+<p>在 Chrome 中，资源加载的优先级分为<em>Highest</em>，<em>High</em>，<em>Medium</em>，<em>Low</em>，<em>Lowest</em>。HTML/CSS资源优先级为 <em>Highest</em> ，图片资源按是否出现在当前视窗中将优先级分为 <em>High</em> 和 <em>Low</em> ，脚本资源则较为复杂，浏览器将会按照它们是否异步、阻塞、延迟判定优先级。通过<code>as</code>属性可以指定资源的类型，以此指定资源加载的优先级。比如，通过加入<code>as=&quot;style&quot;</code>就可以使资源获得最高的优先级。值得一提的是，浏览器并不会验证你请求的资源类型，假如你想，你可以对任意资源指定<code>as=&quot;style&quot;</code>，让其获得最高优先级，即使该资源并不是样式文件。此外，如果不加入<code>as</code>属性，浏览器将会将该资源的优先级设为 <em>Lowest</em> 。</p>
+<p>同时，<strong>Preload</strong> 指令在请求资源的同时并不会阻塞渲染和<code>onload</code>事件。而且，其带有 <code>onload</code> 事件，故可以自定义资源在预加载完毕后的回调函数。</p>
+<h2 id="区分-Preload-和-Prefetch-的用途"><a href="#区分-Preload-和-Prefetch-的用途" class="headerlink" title="区分 Preload 和 Prefetch 的用途"></a>区分 Preload 和 Prefetch 的用途</h2><ul>
+<li><strong>Preload</strong> 是告诉浏览器页面必定需要的资源，浏览器一定会加载这些资源。</li>
+<li><strong>Prefetch</strong> 是告诉浏览器页面可能需要的资源，浏览器不一定会加载这些资源。</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><strong>Preload</strong> 可以有效地降低首屏的加载时间，因为可以将一些不影响首屏但重要的文件延后加载，唯一缺点就是兼容性不好，Chrome 在 2016 年左右才支持了这一特性。最终，主页预加载采用的代码如下：</p>
+<pre><code class="html">&lt;link rel=&quot;preload&quot; href=&quot;https://tva2.sinaimg.cn/large/0072Vf1pgy1foxkf8h7q7j31hc0u0k55.jpg&quot; as=&quot;image&quot;&gt;
+</code></pre>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/LoeKoyori/cdn@2.0/img/custom/donate/AliPayQR.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/LoeKoyori/cdn@2.0/img/custom/donate/WeChanQR.png"></li>
+              </ul>
             </div>
           </div>
         </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
       </article>
-    </div>
-  </div>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/2021/05/11/提问的智慧/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/LoeKoyori/cdn@2.0/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://ww1.sinaimg.cn/large/007gk3UJgy1gqgsnoyntrj31z4140hdt.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://ww1.sinaimg.cn/large/007gk3UJgy1gqgsnoyntrj31z4140hdt.jpg">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                提问的智慧</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+        
+          
+            <div class="post-nepre half next">
+          
+            <a href="/2021/05/08/hello-world/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/LoeKoyori/cdn@2.0/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                Hello World</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "IexWd2YhBVDoxjLOtrYBgCR5-gzGzoHsz",
+        appKey: "z22UPGIim7pqqmGdaU7xgfbn",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="https://blogdemo.playmarxcards.online" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/LoeKoyori/cdn@2.0/img/custom/avatar.png" itemprop="image" alt="Loe-Koyori" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="https://blogdemo.playmarxcards.online" itemprop="url" rel="author">Loe-Koyori</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>一个好奇的人</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
+
+
 
     </div>    
     <div class="ins-search">

@@ -57,6 +57,26 @@
   </entry>
   
   <entry>
+    <title>如何恰当地使用预加载</title>
+    <link href="https://blogdemo.playmarxcards.online/2021/05/09/%E5%A6%82%E4%BD%95%E6%81%B0%E5%BD%93%E5%9C%B0%E4%BD%BF%E7%94%A8%E9%A2%84%E5%8A%A0%E8%BD%BD/"/>
+    <id>https://blogdemo.playmarxcards.online/2021/05/09/如何恰当地使用预加载/</id>
+    <published>2021-05-09T08:48:55.000Z</published>
+    <updated>2021-05-14T08:37:31.307Z</updated>
+    
+    <summary type="html">
+    
+      谈谈prefetch、subresource和preload
+    
+    </summary>
+    
+      <category term="技术" scheme="https://blogdemo.playmarxcards.online/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="web" scheme="https://blogdemo.playmarxcards.online/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="https://blogdemo.playmarxcards.online/2021/05/08/hello-world/"/>
     <id>https://blogdemo.playmarxcards.online/2021/05/08/hello-world/</id>
