@@ -108,7 +108,13 @@
      
       
       <div class="header-info">
-        <p>&#34;The passion of destruction is also the passion of creation.&#34;</p>
+        <script>
+        if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            document.write("<p>Sin Banderas Ni Fronteras 没有国旗 没有边界</p>");
+        } else {
+          document.write("<p>&#34;The passion of destruction is also the passion of creation.&#34;</p>");
+        }</script>
+        
         <div class="top-social_v2">
           <li id="bg-pre">
             <img class="flipx" src="https://cdn.jsdelivr.net/gh/LoeKoyori/cdn@2.0/img/other/next-b.svg">
