@@ -5,7 +5,7 @@
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   <meta name="referrer" content="same-origin">
   
-  <title itemprop="name">Category: 技术 | Loe-Koyori还在施工的家</title>
+  <title itemprop="name">讲讲用BotUI中碰到的几个坑 | Loe-Koyori还在施工的家</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -434,237 +434,170 @@
   </div>
 </header>
 
-      
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div class="pattern-center-blank"></div>
-<div class="pattern-center ">
-  <div class="pattern-attachment-img">
-    <img data-src="https://ww1.sinaimg.cn/large/007gk3UJgy1gqdos5q1tij31z4140mzw.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://ww1.sinaimg.cn/large/007gk3UJgy1gqkduymjf9j30zk0p8dp1.jpg);" src="https://cdn.jsdelivr.net/gh/LoeKoyori/cdn@2.0/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://ww1.sinaimg.cn/large/007gk3UJgy1gqkduymjf9j30zk0p8dp1.jpg">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      讲讲用BotUI中碰到的几个坑</h1>
+      <p class="entry-census">
+        <span>
+          <a href="https://blogdemo.playmarxcards.online">
+            <img src="https://cdn.jsdelivr.net/gh/LoeKoyori/cdn@2.0/img/custom/avatar.png">
+          </a>
+        </span>
+        <span>
+          <a href="https://blogdemo.playmarxcards.online">Loe-Koyori</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2021-5-14<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
   </div>
-  <header class="pattern-header ">
-    <h1 class="cat-title">技术</h1>
-    <span class="cat-des">
-      <p>Geek – Only for Fun</p>
-    </span>
-  </header>
-</div>
+
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <p>在写本站的 <a href="https://blogdemo.playmarxcards.online/about/">about</a> 页面时，用到了一个开源的项目 <a href="https://docs.botui.org/" target="_blank" rel="noopener">BotUI</a> 。通过 <strong>BotUI</strong> ，可以比较容易地实现聊天界面。它的api也特别简单，十几分钟看一遍官方文档就基本能写了。 </p>
+<p>本来文稿量比较大，分支也比比较多，但考虑到这界面又不能 SL (Save and Load)，其实不适合用来大量获取文本。最后我决定把稿子中严肃的部分提取出来单独放进文章 <a href="https://blogdemo.playmarxcards.online/1926/08/17/Hello%20World/">Hello World</a> 里，<a href="https://blogdemo.playmarxcards.online/about/">about</a> 页面稿子精简到300字，总体基调轻松一些。</p>
+<p>最后的成品虽然表面上看起来是有分支，但其实还是线性的。在“我”说完前三句话时，用户可以选择“然后呢”或“少废话”。</p>
+<p><img src="http://ww1.sinaimg.cn/large/007gk3UJgy1gqkcqblspvj30m00aw3yu.jpg" alt="图片"></p>
+<p>其中，如果选择“然后呢”，“我”将会推进对话；如果选择“少废话”，“我”会发一张图和一句话，然后强制选择“然后呢”，再继续推进对话。</p>
+<p><img src="https://ww1.sinaimg.cn/large/007gk3UJgy1gqkcu37k9qj30kw0aeabu.jpg" alt="图片"></p>
+<p>这个图片是用 <strong>markdown</strong> 语法实现的：</p>
+<pre><code class="javascript">end = function () {
+    botui.message.add({
+        delay: 800,
+        content: &#39;![...](https://*.gif)&#39;
+    }).then(function() { 
+        botui.message.add({
+            delay:1500,
+            content: &quot;哼，再给你一次组织语言的机会💘&quot;
+        }).then(function () {
+            botui.action.button({
+                delay: 1200,
+                action: [{
+                    text: &quot;然后呢？ 😱&quot;,
+                    value: &quot;sure&quot;
+                }]    
+            }).then(function () {
+                    secondpart()
+            })
+        })
+    })       
+}
+</code></pre>
+<p>但是测试下来，图片并不会显示出来，而会出现一个空白的消息框。打开浏览器控制台，发现图片资源确实被下载了，但消息框内 <em>context</em> 为空。如果在显示图片后直接使用<code>botui.message.button</code> ，则可以正常显示。但在点击按钮后消息框又变为空白。</p>
+<p>在之后还有一个用到 markdown 语法表示链接的，但也是显示文字不能表示链接。</p>
+<p>经确认，我用的 <strong>BotUI</strong> 的版本确实是最新。查了很久，发现问题在这块代码：</p>
+<pre><code class="javascript">root.Vue.directive(&#39;botui-markdown&#39;, function (el, binding) {
+      if(binding.value == &#39;false&#39;) return; // v-botui-markdown=&quot;false&quot;
+      el.innerHTML = _parseMarkDown(el.textContent);
+});
+</code></pre>
+<p>这导致只要下一消息一被显示，上一使用 markdown 语法的消息就会被立即隐藏。<code>botui.message.add</code>的<code>delay</code>是先于消息展示的，所以上衣消息在显示图片的瞬时，就会进入下一消息的等待时间，消息就会被立即隐藏。</p>
+<p>解决方法是将上方代码块修改一下：</p>
+<pre><code class="javascript">root.Vue.directive(&#39;botui-markdown&#39;, function (el, binding) {
+    if(binding.value == false || el.getAttribute(&#39;botui-markdown-done&#39;)) return; // v-botui-markdown=&quot;false&quot;
+    el.innerHTML = _parseMarkDown(el.textContent);
+    el.setAttribute(&#39;botui-markdown-done&#39;, true); // mark the node as already parsed
+});
+</code></pre>
+<p>这样就可以正常显示了。</p>
+<p>比较可惜的是，<strong>BotUI</strong> 好像已经两三年没人维护了，估计也没什么再更新代码的可能性。</p>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/LoeKoyori/cdn@2.2/img/custom/donate/AliPayQR.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/LoeKoyori/cdn@2.2/img/custom/donate/WeChanQR.png"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2021/05/13/使用 Moyea SWF to Video Converter 实现 swf 文件转换 mp4 文件/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/LoeKoyori/cdn@2.0/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://ww1.sinaimg.cn/large/007gk3UJgy1gqgrviycw6j31z4140kfr.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://ww1.sinaimg.cn/large/007gk3UJgy1gqgrviycw6j31z4140kfr.jpg">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                使用 Moyea SWF to Video Converter 实现 swf 文件转换 mp4 文件</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
       
-  <!-- 首页默认取最最新文章集 -->
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2021/05/14/讲讲用BotUI中碰到的几个坑/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://ww1.sinaimg.cn/large/007gk3UJgy1gqkduymjf9j30zk0p8dp1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2021/05/14/讲讲用BotUI中碰到的几个坑/">
-    讲讲用BotUI中碰到的几个坑</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2021-5-14</div>
-    <p>
-    写bug一时爽，找bug火葬场</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2021/05/14/讲讲用BotUI中碰到的几个坑/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2021/05/13/使用 Moyea SWF to Video Converter 实现 swf 文件转换 mp4 文件/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://ww1.sinaimg.cn/large/007gk3UJgy1gqgrviycw6j31z4140kfr.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2021/05/13/使用 Moyea SWF to Video Converter 实现 swf 文件转换 mp4 文件/">
-    使用 Moyea SWF to Video Converter 实现 swf 文件转换 mp4 文件</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2021-5-13</div>
-    <p>
-    swf文件转换mp4文件</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2021/05/13/使用 Moyea SWF to Video Converter 实现 swf 文件转换 mp4 文件/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2021/05/09/如何恰当地使用预加载/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://ww1.sinaimg.cn/large/007gk3UJgy1gqi1hwgssqj31z4140111.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2021/05/09/如何恰当地使用预加载/">
-    如何恰当地使用预加载</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2021-5-9</div>
-    <p>
-    谈谈prefetch、subresource和preload</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2021/05/09/如何恰当地使用预加载/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "IexWd2YhBVDoxjLOtrYBgCR5-gzGzoHsz",
+        appKey: "z22UPGIim7pqqmGdaU7xgfbn",
+        path: window.location.pathname,
+        placeholder: "说说什么吧 ..."
+      })
+  }
+</script>
 
-
-      <div class="clearer">
-      </div>
-    </main>
-    <!--  -->
-    
-  </div>
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="https://blogdemo.playmarxcards.online" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/LoeKoyori/cdn@2.0/img/custom/avatar.png" itemprop="image" alt="Loe-Koyori" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="https://blogdemo.playmarxcards.online" itemprop="url" rel="author">Loe-Koyori</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>一个在学习如何思考的人</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
 
-<!-- 
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2021/05/14/讲讲用BotUI中碰到的几个坑/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://ww1.sinaimg.cn/large/007gk3UJgy1gqkduymjf9j30zk0p8dp1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2021/05/14/讲讲用BotUI中碰到的几个坑/">
-    讲讲用BotUI中碰到的几个坑</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2021-5-14</div>
-    <p>
-    写bug一时爽，找bug火葬场</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2021/05/14/讲讲用BotUI中碰到的几个坑/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2021/05/13/使用 Moyea SWF to Video Converter 实现 swf 文件转换 mp4 文件/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://ww1.sinaimg.cn/large/007gk3UJgy1gqgrviycw6j31z4140kfr.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2021/05/13/使用 Moyea SWF to Video Converter 实现 swf 文件转换 mp4 文件/">
-    使用 Moyea SWF to Video Converter 实现 swf 文件转换 mp4 文件</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2021-5-13</div>
-    <p>
-    swf文件转换mp4文件</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2021/05/13/使用 Moyea SWF to Video Converter 实现 swf 文件转换 mp4 文件/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2021/05/09/如何恰当地使用预加载/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://ww1.sinaimg.cn/large/007gk3UJgy1gqi1hwgssqj31z4140111.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2021/05/09/如何恰当地使用预加载/">
-    如何恰当地使用预加载</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2021-5-9</div>
-    <p>
-    谈谈prefetch、subresource和preload</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2021/05/09/如何恰当地使用预加载/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
 
- -->
+
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>

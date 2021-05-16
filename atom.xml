@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blogdemo.playmarxcards.online/"/>
-  <updated>2021-05-15T12:42:29.655Z</updated>
+  <updated>2021-05-16T09:12:28.922Z</updated>
   <id>https://blogdemo.playmarxcards.online/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>讲讲用BotUI中碰到的几个坑</title>
+    <link href="https://blogdemo.playmarxcards.online/2021/05/14/%E8%AE%B2%E8%AE%B2%E7%94%A8BotUI%E4%B8%AD%E7%A2%B0%E5%88%B0%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9D%91/"/>
+    <id>https://blogdemo.playmarxcards.online/2021/05/14/讲讲用BotUI中碰到的几个坑/</id>
+    <published>2021-05-14T13:35:00.000Z</published>
+    <updated>2021-05-16T09:12:28.922Z</updated>
+    
+    <summary type="html">
+    
+      写bug一时爽，找bug火葬场
+    
+    </summary>
+    
+      <category term="技术" scheme="https://blogdemo.playmarxcards.online/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="web" scheme="https://blogdemo.playmarxcards.online/tags/web/"/>
+    
+  </entry>
   
   <entry>
     <title>使用 Moyea SWF to Video Converter 实现 swf 文件转换 mp4 文件</title>
@@ -141,7 +161,7 @@
     <link href="https://blogdemo.playmarxcards.online/1926/08/17/Hello%20World/"/>
     <id>https://blogdemo.playmarxcards.online/1926/08/17/Hello World/</id>
     <published>1926-08-16T16:00:01.000Z</published>
-    <updated>2021-05-15T12:42:29.656Z</updated>
+    <updated>2021-05-16T08:08:25.904Z</updated>
     
     <summary type="html">
     
