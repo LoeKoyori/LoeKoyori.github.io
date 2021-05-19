@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Loe-Koyori还在施工的家</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://blogdemo.playmarxcards.online/"/>
+  <updated>2021-05-17T15:06:52.586Z</updated>
+  <id>https://blogdemo.playmarxcards.online/</id>
+  
+  <author>
+    <name>Loe-Koyori</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>讲讲用BotUI中碰到的几个坑</title>
+    <link href="https://blogdemo.playmarxcards.online/2021/05/14/%E8%AE%B2%E8%AE%B2%E7%94%A8BotUI%E4%B8%AD%E7%A2%B0%E5%88%B0%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9D%91/"/>
+    <id>https://blogdemo.playmarxcards.online/2021/05/14/讲讲用BotUI中碰到的几个坑/</id>
+    <published>2021-05-14T13:35:00.000Z</published>
+    <updated>2021-05-17T15:06:52.586Z</updated>
+    
+    <summary type="html">
+    
+      写bug一时爽，找bug火葬场
+    
+    </summary>
+    
+      <category term="技术" scheme="https://blogdemo.playmarxcards.online/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="web" scheme="https://blogdemo.playmarxcards.online/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Moyea SWF to Video Converter 实现 swf 文件转换 mp4 文件</title>
+    <link href="https://blogdemo.playmarxcards.online/2021/05/13/%E4%BD%BF%E7%94%A8%20Moyea%20SWF%20to%20Video%20Converter%20%E5%AE%9E%E7%8E%B0%20swf%20%E6%96%87%E4%BB%B6%E8%BD%AC%E6%8D%A2%20mp4%20%E6%96%87%E4%BB%B6/"/>
+    <id>https://blogdemo.playmarxcards.online/2021/05/13/使用 Moyea SWF to Video Converter 实现 swf 文件转换 mp4 文件/</id>
+    <published>2021-05-13T06:18:01.000Z</published>
+    <updated>2021-05-15T12:42:29.655Z</updated>
+    
+    <summary type="html">
+    
+      swf文件转换mp4文件
+    
+    </summary>
+    
+      <category term="技术" scheme="https://blogdemo.playmarxcards.online/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="教程" scheme="https://blogdemo.playmarxcards.online/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>提问的智慧</title>
+    <link href="https://blogdemo.playmarxcards.online/2021/05/11/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/"/>
+    <id>https://blogdemo.playmarxcards.online/2021/05/11/提问的智慧/</id>
+    <published>2021-05-11T04:18:01.000Z</published>
+    <updated>2021-05-15T12:42:29.655Z</updated>
+    
+    <summary type="html">
+    
+      谷歌是你的好朋友
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://blogdemo.playmarxcards.online/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="教程" scheme="https://blogdemo.playmarxcards.online/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何恰当地使用预加载</title>
+    <link href="https://blogdemo.playmarxcards.online/2021/05/09/%E5%A6%82%E4%BD%95%E6%81%B0%E5%BD%93%E5%9C%B0%E4%BD%BF%E7%94%A8%E9%A2%84%E5%8A%A0%E8%BD%BD/"/>
+    <id>https://blogdemo.playmarxcards.online/2021/05/09/如何恰当地使用预加载/</id>
+    <published>2021-05-09T08:48:55.000Z</published>
+    <updated>2021-05-16T08:09:48.455Z</updated>
+    
+    <summary type="html">
+    
+      谈谈prefetch、subresource和preload
+    
+    </summary>
+    
+      <category term="技术" scheme="https://blogdemo.playmarxcards.online/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="web" scheme="https://blogdemo.playmarxcards.online/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>乔治·弗洛伊德事件：一场针对美国警察的黑公关狂欢</title>
+    <link href="https://blogdemo.playmarxcards.online/2020/12/04/%E4%B9%94%E6%B2%BB%C2%B7%E5%BC%97%E6%B4%9B%E4%BC%8A%E5%BE%B7%E4%BA%8B%E4%BB%B6%EF%BC%9A%E4%B8%80%E5%9C%BA%E9%92%88%E5%AF%B9%E7%BE%8E%E5%9B%BD%E8%AD%A6%E5%AF%9F%E7%9A%84%E9%BB%91%E5%85%AC%E5%85%B3%E7%8B%82%E6%AC%A2/"/>
+    <id>https://blogdemo.playmarxcards.online/2020/12/04/乔治·弗洛伊德事件：一场针对美国警察的黑公关狂欢/</id>
+    <published>2020-12-04T02:00:55.000Z</published>
+    <updated>2021-05-15T14:45:29.714Z</updated>
+    
+    <summary type="html">
+    
+      实在是没有才能独立写出这样的雄文
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://blogdemo.playmarxcards.online/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="聊斋志异" scheme="https://blogdemo.playmarxcards.online/tags/%E8%81%8A%E6%96%8B%E5%BF%97%E5%BC%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>涩图分享法律指南</title>
+    <link href="https://blogdemo.playmarxcards.online/2020/09/27/%E4%BD%A0%E7%9A%84%E6%B6%A9%E5%9B%BE%E6%B3%95%E5%BE%8B%E6%8C%87%E5%8D%97/"/>
+    <id>https://blogdemo.playmarxcards.online/2020/09/27/你的涩图法律指南/</id>
+    <published>2020-09-27T07:04:32.000Z</published>
+    <updated>2021-05-19T04:23:04.694Z</updated>
+    
+    <summary type="html">
+    
+      你的当代涩图说明书
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://blogdemo.playmarxcards.online/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="随笔" scheme="https://blogdemo.playmarxcards.online/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="理论探讨" scheme="https://blogdemo.playmarxcards.online/tags/%E7%90%86%E8%AE%BA%E6%8E%A2%E8%AE%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你所站立的地方，便是你的中国</title>
+    <link href="https://blogdemo.playmarxcards.online/2020/03/19/%E4%BD%A0%E6%89%80%E7%AB%99%E7%AB%8B%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E4%BE%BF%E6%98%AF%E4%BD%A0%E7%9A%84%E4%B8%AD%E5%9B%BD/"/>
+    <id>https://blogdemo.playmarxcards.online/2020/03/19/你所站立的地方，便是你的中国/</id>
+    <published>2020-03-19T12:30:55.000Z</published>
+    <updated>2021-05-16T13:44:39.643Z</updated>
+    
+    <summary type="html">
+    
+      你所站立的地方，便是你的大唐
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://blogdemo.playmarxcards.online/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="聊斋志异" scheme="https://blogdemo.playmarxcards.online/tags/%E8%81%8A%E6%96%8B%E5%BF%97%E5%BC%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中医药条例笑话六则</title>
+    <link href="https://blogdemo.playmarxcards.online/2020/02/20/%E4%B8%AD%E5%8C%BB%E8%8D%AF%E6%9D%A1%E4%BE%8B%E7%AC%91%E8%AF%9D/"/>
+    <id>https://blogdemo.playmarxcards.online/2020/02/20/中医药条例笑话/</id>
+    <published>2020-02-20T07:43:55.000Z</published>
+    <updated>2021-05-17T15:09:48.669Z</updated>
+    
+    <summary type="html">
+    
+      不得诋毁污蔑中医药！
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://blogdemo.playmarxcards.online/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="笑林广记" scheme="https://blogdemo.playmarxcards.online/tags/%E7%AC%91%E6%9E%97%E5%B9%BF%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新冠肺炎笑话</title>
+    <link href="https://blogdemo.playmarxcards.online/2020/02/05/%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E6%94%BF%E6%B2%BB%E7%AC%91%E8%AF%9D/"/>
+    <id>https://blogdemo.playmarxcards.online/2020/02/05/新冠肺炎政治笑话/</id>
+    <published>2020-02-05T04:03:55.000Z</published>
+    <updated>2021-05-17T15:08:47.250Z</updated>
+    
+    <summary type="html">
+    
+      我们的物资储备和市场供应是充足的
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://blogdemo.playmarxcards.online/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="笑林广记" scheme="https://blogdemo.playmarxcards.online/tags/%E7%AC%91%E6%9E%97%E5%B9%BF%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Fuck democracy!</title>
+    <link href="https://blogdemo.playmarxcards.online/2019/09/01/Fuck-democracy!/"/>
+    <id>https://blogdemo.playmarxcards.online/2019/09/01/Fuck-democracy!/</id>
+    <published>2019-09-01T07:04:32.000Z</published>
+    <updated>2021-05-17T15:33:45.893Z</updated>
+    
+    <summary type="html">
+    
+      我爱帝吧青年、饭圈女孩、阿中哥哥！
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://blogdemo.playmarxcards.online/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="随笔" scheme="https://blogdemo.playmarxcards.online/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>纪念小林多喜二同志</title>
+    <link href="https://blogdemo.playmarxcards.online/2019/02/20/%E7%BA%AA%E5%BF%B5%E5%B0%8F%E6%9E%97%E5%A4%9A%E5%96%9C%E4%BA%8C%E5%90%8C%E5%BF%97/"/>
+    <id>https://blogdemo.playmarxcards.online/2019/02/20/纪念小林多喜二同志/</id>
+    <published>2019-02-20T11:05:32.000Z</published>
+    <updated>2021-05-16T07:40:51.384Z</updated>
+    
+    <summary type="html">
+    
+      纪念《蟹工船》出版九十周年
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://blogdemo.playmarxcards.online/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="随笔" scheme="https://blogdemo.playmarxcards.online/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://blogdemo.playmarxcards.online/1926/08/17/Hello%20World/"/>
+    <id>https://blogdemo.playmarxcards.online/1926/08/17/Hello World/</id>
+    <published>1926-08-16T16:00:01.000Z</published>
+    <updated>2021-05-16T08:08:25.904Z</updated>
+    
+    <summary type="html">
+    
+      你好，世界
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://blogdemo.playmarxcards.online/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="随笔" scheme="https://blogdemo.playmarxcards.online/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+</feed>
