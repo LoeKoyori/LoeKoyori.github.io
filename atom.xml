@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blogdemo.playmarxcards.online/"/>
-  <updated>2021-05-23T15:07:08.897Z</updated>
+  <updated>2021-05-24T06:47:22.985Z</updated>
   <id>https://blogdemo.playmarxcards.online/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blogdemo.playmarxcards.online/2021/05/22/%E9%85%92%E5%90%8E%E9%A9%BE%E9%A9%B6%E7%9A%84%E6%B3%95%E5%BE%8B%E8%B4%A3%E4%BB%BB/"/>
     <id>https://blogdemo.playmarxcards.online/2021/05/22/酒后驾驶的法律责任/</id>
     <published>2021-05-22T04:18:01.000Z</published>
-    <updated>2021-05-23T15:07:08.897Z</updated>
+    <updated>2021-05-24T06:47:22.985Z</updated>
     
     <summary type="html">
     
@@ -32,7 +32,9 @@
       <category term="杂谈" scheme="https://blogdemo.playmarxcards.online/categories/%E6%9D%82%E8%B0%88/"/>
     
     
-      <category term="教程" scheme="https://blogdemo.playmarxcards.online/tags/%E6%95%99%E7%A8%8B/"/>
+      <category term="随笔" scheme="https://blogdemo.playmarxcards.online/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="理论探讨" scheme="https://blogdemo.playmarxcards.online/tags/%E7%90%86%E8%AE%BA%E6%8E%A2%E8%AE%A8/"/>
     
   </entry>
   
@@ -117,11 +119,31 @@
   </entry>
   
   <entry>
+    <title>法律笑话二十则</title>
+    <link href="https://blogdemo.playmarxcards.online/2021/05/01/%E6%B3%95%E5%BE%8B%E7%AC%91%E8%AF%9D%E4%BA%8C%E5%8D%81%E5%88%99/"/>
+    <id>https://blogdemo.playmarxcards.online/2021/05/01/法律笑话二十则/</id>
+    <published>2021-05-01T12:05:00.000Z</published>
+    <updated>2021-05-24T06:40:00.278Z</updated>
+    
+    <summary type="html">
+    
+      为了法治建设！
+    
+    </summary>
+    
+      <category term="杂谈" scheme="https://blogdemo.playmarxcards.online/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="笑林广记" scheme="https://blogdemo.playmarxcards.online/tags/%E7%AC%91%E6%9E%97%E5%B9%BF%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Unity引擎Galgame超入门解包教程</title>
     <link href="https://blogdemo.playmarxcards.online/2021/04/24/Unity%E5%BC%95%E6%93%8EGalgame%E8%B6%85%E5%85%A5%E9%97%A8%E8%A7%A3%E5%8C%85%E6%95%99%E7%A8%8B/"/>
     <id>https://blogdemo.playmarxcards.online/2021/04/24/Unity引擎Galgame超入门解包教程/</id>
     <published>2021-04-24T15:05:20.000Z</published>
-    <updated>2021-05-22T08:43:45.599Z</updated>
+    <updated>2021-05-24T06:48:12.654Z</updated>
     
     <summary type="html">
     
@@ -129,10 +151,30 @@
     
     </summary>
     
-      <category term="杂谈" scheme="https://blogdemo.playmarxcards.online/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="技术" scheme="https://blogdemo.playmarxcards.online/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="随笔" scheme="https://blogdemo.playmarxcards.online/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="教程" scheme="https://blogdemo.playmarxcards.online/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>打倒“学术黑话”反动派！</title>
+    <link href="https://blogdemo.playmarxcards.online/2021/04/09/%E6%89%93%E5%80%92%E2%80%9C%E5%AD%A6%E6%9C%AF%E9%BB%91%E8%AF%9D%E2%80%9D%E5%8F%8D%E5%8A%A8%E6%B4%BE%EF%BC%81/"/>
+    <id>https://blogdemo.playmarxcards.online/2021/04/09/打倒“学术黑话”反动派！/</id>
+    <published>2021-04-09T15:25:00.000Z</published>
+    <updated>2021-05-24T07:11:29.925Z</updated>
+    
+    <summary type="html">
+    
+      禁止经院哲学以外的黑话擅自成为白话
+    
+    </summary>
+    
+      <category term="评论" scheme="https://blogdemo.playmarxcards.online/categories/%E8%AF%84%E8%AE%BA/"/>
+    
+    
+      <category term="时事评论" scheme="https://blogdemo.playmarxcards.online/tags/%E6%97%B6%E4%BA%8B%E8%AF%84%E8%AE%BA/"/>
     
   </entry>
   
@@ -141,7 +183,7 @@
     <link href="https://blogdemo.playmarxcards.online/2021/01/18/996%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/"/>
     <id>https://blogdemo.playmarxcards.online/2021/01/18/996是什么？/</id>
     <published>2021-01-18T12:37:10.000Z</published>
-    <updated>2021-05-19T14:36:42.218Z</updated>
+    <updated>2021-05-24T06:48:45.757Z</updated>
     
     <summary type="html">
     
@@ -161,7 +203,7 @@
     <link href="https://blogdemo.playmarxcards.online/2021/01/18/%E5%9B%BD%E9%99%85%E6%AD%8C/"/>
     <id>https://blogdemo.playmarxcards.online/2021/01/18/国际歌/</id>
     <published>2021-01-18T12:37:10.000Z</published>
-    <updated>2021-05-22T16:16:28.250Z</updated>
+    <updated>2021-05-24T06:46:17.784Z</updated>
     
     <summary type="html">
     
@@ -169,7 +211,7 @@
     
     </summary>
     
-      <category term="杂谈" scheme="https://blogdemo.playmarxcards.online/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="想法" scheme="https://blogdemo.playmarxcards.online/categories/%E6%83%B3%E6%B3%95/"/>
     
     
       <category term="随笔" scheme="https://blogdemo.playmarxcards.online/tags/%E9%9A%8F%E7%AC%94/"/>
@@ -245,7 +287,7 @@
     <link href="https://blogdemo.playmarxcards.online/2020/09/27/%E4%BD%A0%E7%9A%84%E6%B6%A9%E5%9B%BE%E6%B3%95%E5%BE%8B%E6%8C%87%E5%8D%97/"/>
     <id>https://blogdemo.playmarxcards.online/2020/09/27/你的涩图法律指南/</id>
     <published>2020-09-27T07:04:32.000Z</published>
-    <updated>2021-05-19T04:23:04.694Z</updated>
+    <updated>2021-05-24T07:21:07.579Z</updated>
     
     <summary type="html">
     
@@ -383,46 +425,6 @@
       <category term="随笔" scheme="https://blogdemo.playmarxcards.online/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="理论探讨" scheme="https://blogdemo.playmarxcards.online/tags/%E7%90%86%E8%AE%BA%E6%8E%A2%E8%AE%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Fuck democracy!</title>
-    <link href="https://blogdemo.playmarxcards.online/2019/09/01/Fuck-democracy!/"/>
-    <id>https://blogdemo.playmarxcards.online/2019/09/01/Fuck-democracy!/</id>
-    <published>2019-09-01T07:04:32.000Z</published>
-    <updated>2021-05-17T15:33:45.893Z</updated>
-    
-    <summary type="html">
-    
-      我爱帝吧青年、饭圈女孩、阿中哥哥！
-    
-    </summary>
-    
-      <category term="杂谈" scheme="https://blogdemo.playmarxcards.online/categories/%E6%9D%82%E8%B0%88/"/>
-    
-    
-      <category term="随笔" scheme="https://blogdemo.playmarxcards.online/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>纪念小林多喜二同志</title>
-    <link href="https://blogdemo.playmarxcards.online/2019/02/20/%E7%BA%AA%E5%BF%B5%E5%B0%8F%E6%9E%97%E5%A4%9A%E5%96%9C%E4%BA%8C%E5%90%8C%E5%BF%97/"/>
-    <id>https://blogdemo.playmarxcards.online/2019/02/20/纪念小林多喜二同志/</id>
-    <published>2019-02-20T11:05:32.000Z</published>
-    <updated>2021-05-16T07:40:51.384Z</updated>
-    
-    <summary type="html">
-    
-      纪念《蟹工船》出版九十周年
-    
-    </summary>
-    
-      <category term="杂谈" scheme="https://blogdemo.playmarxcards.online/categories/%E6%9D%82%E8%B0%88/"/>
-    
-    
-      <category term="随笔" scheme="https://blogdemo.playmarxcards.online/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
